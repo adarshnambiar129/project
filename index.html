@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Customer Registration Form">
+    <meta name="keywords" content="HTML, CSS, JavaScript, projects, form">
+    <meta name="author" content="Adarsh Nambiar">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- Navigation starts here !! -->
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li><img src="logo.png" alt="Logo"></li>
+            </a>
+            <a href="index.html">
+                <li>HOME</li>
+            </a>
+            <a href="services.html">
+                <li>SERVICES</li>
+            </a>
+            <a href="contact.html">
+                <li>CONTACT</li>
+            </a>
+            <a href="about.html">
+                <li>ABOUT</li>
+            </a>
+        </ul>
+    </nav>
+
+
+    <!-- Header starts here !! -->
+    <header>
+        <a href="index.html"><h1>New Customer Registration Form</h1></a>
+    </header>
+
+
+    <!-- The main starts here !! -->
+    <main>
+
+        <form action="" method="get">
+
+            <!-- Name  -->
+            <div class="element">
+                <label for="name">FULL NAME <span>*</span></label>
+                <input type="text" maxlength="30" id="name" name="Name" placeholder="Enter your Full Name" required>
+            </div>
+
+            <!-- Date of Birth  -->
+            <div class="element">
+                <label for="dob">DATE OF BIRTH <span>*</span></label>
+                <input type="date" id="dob" name="DOB" placeholder="Enter your Date of Birth" required>
+            </div>
+
+            <!-- Gender  -->
+            <div>
+                <label class="element genderlabel">GENDER <span>*</span></label>
+                <input type="radio" id="male" name="Gender" value="Male" required>
+                <label class="align" for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female" required>
+                <label class="align" for="female">Female</label>
+                <input type="radio" id="others" name="Gender" value="Others" required>
+                <label class="align" for="others">Others</label>
+            </div>
+
+            <!-- Email  -->
+            <div class="element">
+                <label for="email">EMAIL ID <span>*</span></label>
+                <input type="email" id="email" name="Email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+            </div>
+
+            <!-- Mobile number -->
+            <div class="element">
+                <label for="mobile">MOBILE NO. <span>*</span></label>
+                <input class="number" maxlength="10" type="text" id="mobile" name="Mobile"
+                    placeholder="Enter your Mobile number" title="Enter Valid Mobile Number" pattern="[1-9]{1}[0-9]{9}"
+                    required>
+            </div>
+
+            <!-- Address Line 1 -->
+            <div class="element">
+                <label for="address1">ADDRESS <span>*</span></label>
+                <input type="text" maxlength="50" id="address1" name="Address1"
+                    placeholder="Flat Name / Block No / Plot / Floor / Room Number" required>
+            </div>
+
+            <!-- Address Line 2 -->
+            <div class="element">
+                <input type="text" maxlength="50" id="address2" name="Address2"
+                    placeholder="Road/ Street / Locality / Landmark" required>
+            </div>
+
+            <!-- Address Line 3 -->
+            <div class="element">
+                <input type="text" maxlength="50" id="address3" name="Address3" placeholder="Optional">
+            </div>
+
+            <!-- City-->
+            <div class="element">
+                <input type="text" maxlength="15" id="city" name="City" placeholder="Your City" required>
+            </div>
+
+
+            <!-- State-->
+            <div class="element">
+                <label for="state"></label>
+                <select name="State" id="state" required>
+                    <option value="Select State" hidden selected>Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+
+            <!-- Country-->
+            <div class="element">
+                <input type="text" id="country" name="Country" value="India" readonly required>
+            </div>
+
+
+            <!-- How did you hear About Us-->
+            <div class="element">
+                <label for="source">HOW DID YOU HEAR ABOUT US ? <span>*</span></label>
+                <select name="State" id="source" required>
+                    <option value="Select" hidden selected>Select</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Magazine">Magazine</option>
+                    <option value="Television">Television</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <!-- Suggestions-->
+            <div class="element">
+                <label for="suggestions">SUGGESTIONS (IF ANY) FOR FURTHER IMPROVEMENTS</label>
+                <textarea name="Sugestions" id="suggestions" rows="5"></textarea>
+
+
+                <button type="submit" value="Submit">
+                    SUBMIT
+                </button>
+        </form>
+    </main>
+
+
+    <!-- The footer starts here !! -->
+    <footer>
+        <ul>
+            <a href="tnc.html">
+                <li>Terms and Conditions</li>
+            </a>
+            <a href="about.html">
+                <li>About Us</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="feedback.html">
+                <li>Feedback</li>
+            </a>
+        </ul>
+    </footer>
+</body>
+
+</html>
